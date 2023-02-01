@@ -10,14 +10,15 @@ lr.direction = digitalio.Direction.INPUT
 
 runs = 0
 while True:
+    
     led.value = True
-    time.sleep(0.1)
+    time.sleep(0.000000001)
     led.value = False
-    time.sleep(0.1)
+    time.sleep(0.000000001)
+    
     # print(runs)
     # runs += 1
     if(lr.value):
         print("HIGH")
     else:
         print("LOW")
-
